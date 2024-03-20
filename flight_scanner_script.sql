@@ -97,5 +97,10 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
+-- -----------------------------------------------------
+-- inserting in practice values and practice queries
+-- -----------------------------------------------------
+INSERT INTO Air_Routes(Route_ID, Distance, Time, Cost_of_flight, Airports) 
+  values (1, 2, '2023-01-01', 35.00, 'DSM');
 
 SELECT * FROM Air_Routes
