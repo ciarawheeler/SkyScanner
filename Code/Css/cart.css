@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.item-details p, .item-actions form {
+    margin: 4px 0;
+}
+
+.quantity-input, .update-btn, .remove-btn {
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.home-btn, .back-btn {
+    font-weight: bold;
+}
+
+
+.update-btn, .remove-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.remove-btn {
+    background-color: #dc3545;
+}
+
+.update-btn:hover {
+    background-color: #0056b3;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}
+
+.total-cost {
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+
+.checkout-btn:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 600px) {
+    .cart-item {
+        flex-direction: column;
+    }
+
+    .item-actions {
+        margin-top: 10px;
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: black;
+}

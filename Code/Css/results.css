@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    margin: 0;
+    padding: 20px;
+}
+
+.container, .flight-card {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page-header, .flight-header, .seat-selection-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn, .add-to-cart-btn {
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none; 
+}
+
+.btn {
+    background-color: #007bff;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+.add-to-cart-btn:hover {
+    background-color: #e0a800;
+}
+
+.flights-container {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.flight-card {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    margin: 0;
+    padding: 0;
+}
+
+.flight-info, .seat-selection-form {
+    padding: 15px;
+    background-color: #e9ecef; 
+    border-top: 1px solid #dee2e6;
+}
+
+.flight-body, .flight-times, .flight-seats {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    grid-gap: 10px;
+}
+
+.flight-cost {
+    grid-column: span 2;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.seat-type-dropdown {
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.add-to-cart-btn {
+    background-color: #ffc107;
+    margin-left: 15px;
+}
